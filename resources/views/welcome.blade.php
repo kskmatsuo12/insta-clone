@@ -74,6 +74,7 @@
     </head>
     <body>
         <div class="container">
+        {{ Breadcrumbs::render('post','タイトルだよお') }}
             <div class="top_image">
                 <img src="{{ asset('images/top_img.jpg') }}"/>
                 {{--<img src="/top_img.jpg"/>--}}
