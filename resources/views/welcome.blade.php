@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>インスタクローン！</title>
 
         <!-- Fonts -->
@@ -85,5 +85,9 @@
                 <p><a href="{{ route('register') }}">新規登録</a></p>
             </div>
         </div>
+        <form method="POST" action="{{route('post.create')}}">
+            <input name="post"/>
+            <button type="submit">post</button>
+        </form>
     </body>
 </html>
